@@ -8,114 +8,18 @@ class DataSource {
             val list = ArrayList<BlogPost>()
             list.add(
                 BlogPost(
-                    "Congrats!",
+                    "Bit of data here in the future",
                     "Test text field",
                     "none",
-                    "Kamil"
+                    "Item type entry"
                 )
             )
             list.add(
                 BlogPost(
-                    "Congrats2!",
+                    "Additional data",
                     "Test text field2",
                     "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
-                )
-            )
-            list.add(
-                BlogPost(
-                    "Congrats2!",
-                    "Test text field2",
-                    "none2",
-                    "Kamil 2"
+                    "Sales order entry"
                 )
             )
 

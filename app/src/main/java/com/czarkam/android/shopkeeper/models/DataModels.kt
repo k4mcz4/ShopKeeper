@@ -6,3 +6,8 @@ data class BlogPost (
     var image: String,
     var username: String
 )
+
+data class DashboardEntry(
+    var title: String,
+    var values: Int
+)

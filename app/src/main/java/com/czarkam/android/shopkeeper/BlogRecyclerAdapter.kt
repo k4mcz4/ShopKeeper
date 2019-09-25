@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.czarkam.android.shopkeeper.models.BlogPost
 import kotlinx.android.synthetic.main.card_layout.view.*
-import org.w3c.dom.Text
 
 class BlogRecyclerAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Parcelable {
 
@@ -62,12 +61,14 @@ class BlogRecyclerAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>(), P
     class BlogViewHolder constructor(
         itemView: View
     ) : RecyclerView.ViewHolder(itemView) {
-        val blog_title: TextView = itemView.textViewTitle
-        val blog_name: TextView = itemView.textViewName
+        val blog_title: TextView = itemView.reportTitle
+        val blog_name: TextView = itemView.reportName
+        val blog_tit: TextView = itemView.reportContent
 
         fun bind(blogPost: BlogPost) {
             blog_title.setText(blogPost.title)
             blog_name.setText(blogPost.username)
+            blog_tit.setText(blogPost.body)
         }
     }
 

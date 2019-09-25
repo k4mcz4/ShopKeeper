@@ -1,10 +1,10 @@
 package com.czarkam.android.shopkeeper
 
+import android.app.ActionBar
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import com.czarkam.android.shopkeeper.spacingItemDecoration.SpacingItemDecoration
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(findViewById(R.id.my_toolbar))
 
         initRecyclerView()
         addDataSet()
@@ -30,8 +31,8 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@MainActivity)
             blogAdapter = BlogRecyclerAdapter()
             adapter = blogAdapter
-            val topSpacingDecoraion = TopSpacingItemDecoration(30)
-            addItemDecoration(topSpacingDecoraion)
+            val spacingDecoration = SpacingItemDecoration(10,20,20, 10)
+            addItemDecoration(spacingDecoration)
         }
 
 
