@@ -1,13 +1,7 @@
 package com.czarkam.android.shopkeeper.models
 
-data class BlogPost (
-    var title: String,
-    var body: String,
-    var image: String,
-    var username: String
-)
-
-data class DashboardEntry(
-    var title: String,
-    var values: Int
+data class ReportEntry (
+    var reportTitle: String,
+    var reportName: String,
+    var reportDiagram: String // TODO: Change it to Diagram object
 )

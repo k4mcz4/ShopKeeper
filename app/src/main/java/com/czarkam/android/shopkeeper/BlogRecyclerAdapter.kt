@@ -7,12 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.czarkam.android.shopkeeper.models.BlogPost
+import com.czarkam.android.shopkeeper.models.ReportEntry
 import kotlinx.android.synthetic.main.card_layout.view.*
 
 class BlogRecyclerAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>(), Parcelable {
 
-    private var items: List<BlogPost> = ArrayList()
+    private var items: List<ReportEntry> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return BlogViewHolder(
@@ -54,21 +54,21 @@ class BlogRecyclerAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>(), P
         }
     }
 
-    fun submitList(blogList: List<BlogPost>){
+    fun submitList(blogList: List<ReportEntry>){
         items = blogList
     }
 
     class BlogViewHolder constructor(
         itemView: View
     ) : RecyclerView.ViewHolder(itemView) {
-        val blog_title: TextView = itemView.reportTitle
-        val blog_name: TextView = itemView.reportName
-        val blog_tit: TextView = itemView.reportContent
+        val reportTitle: TextView = itemView.reportTitle
+        val reportName: TextView = itemView.reportName
+        val reportDiagram: TextView = itemView.reportDiagram
 
-        fun bind(blogPost: BlogPost) {
-            blog_title.setText(blogPost.title)
-            blog_name.setText(blogPost.username)
-            blog_tit.setText(blogPost.body)
+        fun bind(blogPost: ReportEntry) {
+            reportTitle.setText(blogPost.reportTitle)
+            reportName.setText(blogPost.reportName)
+            reportDiagram.setText(blogPost.reportDiagram)
         }
     }
 

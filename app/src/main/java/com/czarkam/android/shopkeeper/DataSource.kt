@@ -1,25 +1,52 @@
 package com.czarkam.android.shopkeeper
 
-import com.czarkam.android.shopkeeper.models.BlogPost
+import com.czarkam.android.shopkeeper.models.ReportEntry
 
 class DataSource {
     companion object {
-        fun createDataSet(): ArrayList<BlogPost> {
-            val list = ArrayList<BlogPost>()
+        fun createDataSet(): ArrayList<ReportEntry> {
+            val list = ArrayList<ReportEntry>()
+
             list.add(
-                BlogPost(
-                    "Bit of data here in the future",
-                    "Test text field",
-                    "none",
-                    "Item type entry"
+                ReportEntry(
+                    "Sprzedaz",
+                    "Maj:",
+                    "Jakis super diagram"
                 )
             )
             list.add(
-                BlogPost(
-                    "Additional data",
-                    "Test text field2",
-                    "none2",
-                    "Sales order entry"
+                ReportEntry(
+                    "Sprzedaz",
+                    "Maj:",
+                    "Jakis super diagram"
+                )
+            )
+            list.add(
+                ReportEntry(
+                    "Sprzedaz",
+                    "Maj:",
+                    "Jakis super diagram"
+                )
+            )
+            list.add(
+                ReportEntry(
+                    "Sprzedaz",
+                    "Maj:",
+                    "Jakis super diagram"
+                )
+            )
+            list.add(
+                ReportEntry(
+                    "Sprzedaz",
+                    "Maj:",
+                    "Jakis super diagram"
+                )
+            )
+            list.add(
+                ReportEntry(
+                    "Sprzedaz",
+                    "Maj:",
+                    "Jakis super diagram"
                 )
             )
 
