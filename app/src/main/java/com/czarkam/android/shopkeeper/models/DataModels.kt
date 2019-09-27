@@ -5,3 +5,10 @@ data class ReportEntry (
     var reportName: String,
     var reportDiagram: String // TODO: Change it to Diagram object
 )
+
+data class ItemEntry (
+    var sku: String,
+    var itemName: String,
+    var priceNet: Float,
+    var priceGross: Float
+)

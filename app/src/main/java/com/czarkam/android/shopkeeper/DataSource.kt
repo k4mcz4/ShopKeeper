@@ -9,7 +9,7 @@ class DataSource {
 
             list.add(
                 ReportEntry(
-                    "Sprzedaz",
+                    "Inwentarz",
                     "Maj:",
                     "Jakis super diagram"
                 )
