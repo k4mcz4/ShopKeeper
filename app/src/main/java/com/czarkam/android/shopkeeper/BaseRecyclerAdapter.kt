@@ -50,6 +50,7 @@ class BlogViewHolder(
         itemView.setOnClickListener {
             clickListener.onItemClicked(blogPost)
         }
+
     }
 
 }

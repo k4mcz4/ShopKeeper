@@ -28,28 +28,6 @@ class DataSource {
                     "Jakis super diagram"
                 )
             )
-            list.add(
-                ReportEntry(
-                    "Sprzedaz",
-                    "Maj:",
-                    "Jakis super diagram"
-                )
-            )
-            list.add(
-                ReportEntry(
-                    "Sprzedaz",
-                    "Maj:",
-                    "Jakis super diagram"
-                )
-            )
-            list.add(
-                ReportEntry(
-                    "Sprzedaz",
-                    "Maj:",
-                    "Jakis super diagram"
-                )
-            )
-
 
             return list
         }

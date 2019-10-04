@@ -7,10 +7,16 @@
         app:cardElevation="10dp"
         app:cardCornerRadius="2dp"
         app:cardPreventCornerOverlap="false"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/colorSecondary"
+>
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
         <TextView
                 android:id="@+id/reportTitle"

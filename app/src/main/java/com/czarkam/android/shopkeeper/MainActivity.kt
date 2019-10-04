@@ -1,10 +1,12 @@
 package com.czarkam.android.shopkeeper
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -23,7 +25,6 @@ class MainActivity : AppCompatActivity(),OnItemClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.my_toolbar))
-
 
         initRecyclerView()
         addDataSet()
