@@ -9,6 +9,5 @@ data class ReportEntry (
 data class ItemEntry (
     var sku: String,
     var itemName: String,
-    var priceNet: Float,
-    var priceGross: Float
+    var priceNet: Float
 )

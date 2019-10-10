@@ -8,19 +8,20 @@ import android.view.View
 import android.view.ViewGroup
 
 import android.widget.TextView
+import com.czarkam.android.shopkeeper.mainScreen.CardViewHolder
 import com.czarkam.android.shopkeeper.models.ReportEntry
 import kotlinx.android.synthetic.main.card_layout.view.*
 
-class BaseRecyclerAdapter(val itemClickListener: OnItemClickListener) : RecyclerView.Adapter<BlogViewHolder>() {
+class BaseRecyclerAdapter(private val itemClickListener: OnItemClickListener) : RecyclerView.Adapter<CardViewHolder>() {
 
-    var items: List<ReportEntry> = listOf()
-    override fun onBindViewHolder(holder: BlogViewHolder, position: Int) {
+    private var items: List<ReportEntry> = listOf()
+    override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
         val post = items.get(position)
         holder.bind(post,itemClickListener)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BlogViewHolder {
-        return BlogViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
+        return CardViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false)
         )
     }
@@ -35,25 +36,6 @@ class BaseRecyclerAdapter(val itemClickListener: OnItemClickListener) : Recycler
 
 }
 
-class BlogViewHolder(
-    itemView: View
-) : RecyclerView.ViewHolder(itemView) {
-    val reportTitle: TextView = itemView.reportTitle
-    val reportName: TextView = itemView.reportName
-    val reportDiagram: TextView = itemView.reportDiagram
-
-    fun bind(blogPost: ReportEntry, clickListener: OnItemClickListener) {
-        reportTitle.setText(blogPost.reportTitle)
-        reportName.setText(blogPost.reportName)
-        reportDiagram.setText(blogPost.reportDiagram)
-
-        itemView.setOnClickListener {
-            clickListener.onItemClicked(blogPost)
-        }
-
-    }
-
-}
 
 interface OnItemClickListener{
     fun onItemClicked(entry: ReportEntry)

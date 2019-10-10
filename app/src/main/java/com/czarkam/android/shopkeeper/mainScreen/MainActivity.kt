@@ -1,23 +1,19 @@
-package com.czarkam.android.shopkeeper
+package com.czarkam.android.shopkeeper.mainScreen
 
-import android.app.PendingIntent.getActivity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.view.Menu
-import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import com.czarkam.android.shopkeeper.BaseRecyclerAdapter
+import com.czarkam.android.shopkeeper.DataSource
+import com.czarkam.android.shopkeeper.OnItemClickListener
+import com.czarkam.android.shopkeeper.R
 import com.czarkam.android.shopkeeper.itemList.ItemListActivity
 import com.czarkam.android.shopkeeper.models.ReportEntry
 import com.czarkam.android.shopkeeper.spacingItemDecoration.SpacingItemDecoration
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.card_layout.*
-import kotlinx.android.synthetic.main.card_layout.view.*
 
-class MainActivity : AppCompatActivity(),OnItemClickListener {
+class MainActivity : AppCompatActivity(), OnItemClickListener {
 
     private lateinit var blogAdapter: BaseRecyclerAdapter
 
